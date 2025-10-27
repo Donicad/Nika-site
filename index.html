@@ -2,17 +2,14 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DvNika</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nika</title>
 
-    <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- AOS (animações scroll) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
@@ -22,25 +19,25 @@
             <a href="#">Nika<span>.</span></a>
         </div>
 
-        <nav class="menu-desktop">
+        <nav class="menu-desktop" aria-label="Menu principal">
             <ul class="menu">
                 <li><a class="opcoes" href="#hero">Início</a></li>
                 <li><a class="opcoes" href="#solucoes">Serviços</a></li>
-                <li><a class="opcoes" href="#contato">Contato</a></li>
+                <li><a class="contato" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <nav class="menu-mobile">
-        <a href="#hero" class="menu-item"><i class="fas fa-home"></i></a>
-        <a href="#solucoes" class="menu-item"><i class="fas fa-box-open"></i></a>
-        <a href="#contato" class="menu-item"><i class="fab fa-whatsapp"></i></a>
+    <nav class="menu-mobile" aria-hidden="true">
+        <a href="#hero" class="menu-item"><i class="fas fa-home" aria-hidden="true"></i></a>
+        <a href="#solucoes" class="menu-item"><i class="fas fa-box-open" aria-hidden="true"></i></a>
+        <a href="#contato" class="menu-item"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
     </nav>
 
     <section id="hero" data-aos="fade-up">
-        <h1>Quer começar ou melhorar sua loja online?</h1>
-        <p>Eu te ajudo a montar, ajustar e vender mais — seja no seu site próprio ou nos maiores marketplaces do Brasil.
-            Sem complicação, sem papo técnico.</p>
+        <h1>Transformo lojas online em operações que vendem todos os dias</h1>
+        <p>Eu cuido da operação da sua loja — anúncios, integrações, imagens e relatórios — para que você venda mais sem
+            perder tempo.</p>
         <a href="#contato" class="botao-principal" data-aos="zoom-in" data-aos-delay="200">Quero aumentar minhas
             vendas</a>
     </section>
@@ -77,21 +74,16 @@
 
         <div class="solucoes-lista">
             <div class="solucao" data-aos="fade-up" data-aos-delay="150">
-                <h3>🛒 Criação de Loja Online</h3>
-                <p>Montagem completa da sua loja virtual — pronta para vender, bonita, funcional e fácil de gerenciar.
-                    Ideal pra quem quer começar no digital.</p>
-            </div>
-            <div class="solucao" data-aos="fade-up" data-aos-delay="200">
                 <h3>📦 Integração com Marketplaces</h3>
                 <p>Ajudo a conectar seus produtos a grandes plataformas como Mercado Livre, Shopee e Amazon, com
                     estratégias para destacar seus anúncios.</p>
             </div>
-            <div class="solucao" data-aos="fade-up" data-aos-delay="250">
+            <div class="solucao" data-aos="fade-up" data-aos-delay="200">
                 <h3>📈 Otimização e Crescimento</h3>
                 <p>Melhoro sua loja já existente, ajustando SEO, layout e automações para aumentar tráfego e conversão.
                 </p>
             </div>
-            <div class="solucao" data-aos="fade-up" data-aos-delay="300">
+            <div class="solucao" data-aos="fade-up" data-aos-delay="250">
                 <h3>🤝 Consultoria e Suporte</h3>
                 <p>Se você já tem tudo em andamento mas precisa de orientação, te acompanho com dicas práticas e suporte
                     personalizado.</p>
@@ -99,41 +91,71 @@
         </div>
     </section>
 
-    <section id="contato" data-aos="fade-up">
-        <h2>Bora tirar sua loja do papel?</h2>
-        <p>Se você quer começar, ajustar ou melhorar sua loja online, me chama no WhatsApp e a gente conversa sobre o
-            seu projeto.</p>
+    <section id="servicos">
+        <h2 data-aos="fade-up">O que está incluso na operação</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Cuidamos da sua loja de ponta a ponta — com foco em performance,
+            automação e crescimento.</p>
 
-        <form id="lead-form" data-aos="fade-up" data-aos-delay="150">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Fale um pouco sobre sua loja"></textarea>
-            <button type="submit">Enviar mensagem</button>
-        </form>
-
-        <a href="https://wa.me/5511937163053?text=Oi%20Nika,%20vi%20seu%20site%20e%20quero%20falar%20sobre%20meu%20projeto!"
-            target="_blank" class="botao-whats" data-aos="zoom-in" data-aos-delay="200">
-            💬 Falar com o Nika no WhatsApp
-        </a>
+        <div class="servicos-lista">
+            <div class="servico" data-aos="fade-up" data-aos-delay="150">
+                <h3>📊 Análise de concorrência</h3>
+                <p>Estudo do mercado e posicionamento dos seus produtos frente aos principais concorrentes.</p>
+            </div>
+            <div class="servico" data-aos="fade-up" data-aos-delay="200">
+                <h3>🛒 Otimização de anúncios</h3>
+                <p>Melhoria de títulos, descrições e imagens para aumentar cliques e conversões.</p>
+            </div>
+            <div class="servico" data-aos="fade-up" data-aos-delay="250">
+                <h3>🧩 Integrações com ERPs</h3>
+                <p>Configuração de Bling, Shopee, Amazon e comparadores de preço para simplificar sua operação.</p>
+            </div>
+            <div class="servico" data-aos="fade-up" data-aos-delay="300">
+                <h3>📸 Melhoria de imagens</h3>
+                <p>Padronização e otimização visual dos produtos para aumentar a taxa de clique e confiança.</p>
+            </div>
+            <div class="servico" data-aos="fade-up" data-aos-delay="350">
+                <h3>📆 Análise de campanhas</h3>
+                <p>Acompanhamento e análise de resultados para ajustar promoções e ações comerciais.</p>
+            </div>
+            <div class="servico" data-aos="fade-up" data-aos-delay="400">
+                <h3>📈 Dashboards e relatórios</h3>
+                <p>Criação de planilhas automáticas e painéis de desempenho em tempo real.</p>
+            </div>
+        </div>
     </section>
 
-    <footer id="rodape" data-aos="fade-up">
+    <section id="contato" data-aos="fade-up">
+        <h2>Bora tirar sua loja do papel?</h2>
+        <p>Se você quer começar, ajustar ou melhorar sua loja online, me envie um e-mail e a gente conversa sobre o seu
+            projeto.</p>
+
+        <form id="lead-form" method="POST" action="https://formspree.io/f/mkgpgkaw"
+            data-endpoint="https://formspree.io/f/mkgpgkaw" data-aos="fade-up" data-aos-delay="150" novalidate>
+            <input type="text" name="_gotcha" id="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Fale um pouco sobre sua loja"></textarea>
+
+            <button type="submit" id="submit-btn">Enviar E-mail</button>
+
+            <!-- feedback -->
+            <div id="form-feedback" role="status" aria-live="polite" style="margin-top:12px;"></div>
+        </form>
+
+        <p style="margin-top:18px;">Ou se preferir, me chama no WhatsApp.</p>
+        <a href="https://wa.me/5511937163053?text=Oi%20Nika!%20Vi%20seu%20site%20e%20quero%20melhorar%20minhas%20vendas%20online."
+            target="_blank" rel="noopener noreferrer" class="botao-whats" data-aos="zoom-in" data-aos-delay="200">💬
+            Chamar</a>
+    </section>
+
+    <footer id="rodape">
         <h3>Nika<span>.</span></h3>
         <p>Programador & Operador de E-commerce</p>
-
-        <div class="social-links">
-            <a href="https://github.com/SEUUSUARIO" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/SEUUSUARIO" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/SEUUSUARIO" target="_blank">Instagram</a>
-        </div>
-
-        <p class="copy">© 2025 Nika — Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
-    </script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
